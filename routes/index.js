@@ -9,7 +9,7 @@ var Firebase = require('firebase');
 var ref = new Firebase('https://diveapp.firebaseio.com/');
 var divingRef = ref.child("diving");
 var snorkelingRef = ref.child("snorkeling");
-
+// GLOBAL VARIABLES THAT ARE POLLUTING THE GLOBAL SPACE... SMOG
 var allExperiences = [];
 var diveExperiences = [];
 var snorkelExperiences = [];
@@ -46,12 +46,6 @@ router.get('/', function(req, res) {
     console.log("The read failed: " + errorObject.code);
   });
 
-
-
-
-
-	//diveExperiences = appdata.diving;
-	//snorkelExperiences = appdata.snorkeling;
   for( var key in objData ) {
    for ( var key2 in objData[key] ) {
       allExperiences.push(objData[key][key2]);
@@ -67,31 +61,13 @@ router.get('/', function(req, res) {
       snorkelExperiences.push(snorkelingData[key][key2]);
     }
   }
-  //objData.diving.forEach(function(item) {
-  //  allExperiences.push(item);
-  //});
-  //objData.snorkeling.forEach(function(item) {
-  //  allExperiences.push(item);
-  //});
+
   allExperiences.sort(function(a, b) {
     if(new Date(a.date) < new Date(b.date)) { return 1;	}
     if(new Date(a.date) > new Date(b.date)) { return -1; }
     return 0;
   });
 
-
-
-  //appdata.diving.forEach(function(item) {
-	//	allExperiences.push(item);
-	//});
-	//appdata.snorkeling.forEach(function(item) {
-	//	allExperiences.push(item);
-	//});
-	//allExperiences.sort(function(a, b) {
-	//	if(new Date(a.date) < new Date(b.date)) { return 1;	}
-	//	if(new Date(a.date) > new Date(b.date)) { return -1; }
-	//	return 0;
-	//});
 
   res.render('index', { 
   	title: 'Home',
@@ -110,98 +86,32 @@ router.route('/dives')
 		 jf.readFile(file, function(err, obj) {
 		 	console.log('A post request was made.');
 		 	if(req.body.type === 'diving') {
-		 		//var dive_id = obj.diving.push(req.body);
         divingRef.push(req.body);
 		 	} else if (req.body.type === 'snorkeling') {
-		 		//var snorkel_id = obj.snorkeling.push(req.body);
         snorkelingRef.push(req.body);
-
       }
 
-
-		    jf.writeFile(file, obj, function(err) {
-			   if (err) {
-			 		res.send(err);
-			   } else {
-			   		res.json(req.body);
-			   }
+      jf.writeFile(file, obj, function(err) {
+       if (err) {
+        res.send(err);
+       } else {
+          res.json(req.body);
+       }
 		 	})
 		})
 	})
 	// retrieve all posts
 
 .get(function(req, res) {
-    ref.on("value", function(snapshot) {
+    ref.on("value", function (snapshot) {
       snapshot.val();
       console.log(snapshot.val());
     }, function (errorObject) {
       console.log("The read failed: " + errorObject.code);
     });
-
-
-		//jf.readFile(file, function(err, obj) {
-		//  if (err) {
-		//		res.send(err);
-		//  } else  {
-		//  	res.json(obj.snorkeling);
-		//  }
-		//})
-	});
-
-
-
-
-/* GET artists page. */
-/*
-router.get('/artists', function(req, res) {
-	var diveExperiences = [];
-	var snorkelExperiences = [];
-	var dive = [];
-	var snorkel = [];
-	diveExperiences = appdata.diving;
-	snorkelExperiences = appdata.snorkeling;
-
-	appdata.diving.forEach(function(item){
-	if(item.type === 'diving') {
-	  dive = dive.concat(item);
-	} else if (item.type === 'snorkeling'){
-	    	snorkel = snorkel.concat(item);
-	}
-   });
-  res.render('artists', { 
-  	title: 'Artists',
-  	locations: diveExperiences,
-  	snorkelExperiences: snorkelExperiences,
-  	diveSpots: dive,
-  	snorkelSpots: snorkel,
-  	page: 'artistList'
-  	 });
-});
-/*
-
-/* GET artists detail page. */
-/*
-router.get('/artists/:artistid', function(req, res) {
-	var myArt = [];
-	var myArtist= [];
-	appdata.artists.forEach(function(item){
-		if(item.shortname == req.params.artistid) {
-			myArtist.push(item);
-			myArt = myArt.concat(item.artwork);
-		}
-	});
-  res.render('artists', { 
-  	title: 'Artists',
-  	art: myArt,
-  	artists: myArtist,
-  	page: 'artistDetail'
-  	 });
-});
-*/
-
+  });
 
 
 module.exports = router;
 
 
-//take that
