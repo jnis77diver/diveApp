@@ -1,0 +1,20 @@
+<article class="divelist">
+	<section class="layout">
+		<div class="divesnorkellist">
+			<h1 id='userSubmissions'>Submissions</h1>
+			<% allSpots.forEach(function(item){ %>
+			  <div class="<%= item.type %>"></div>
+			  <article class="submission">
+			  	<h3><%= item.title %><span class="small">  in <%= item.where %> </span><span class="small" style="color: black;"> by <%= item.name %></span><br>  
+			  	<span class="small" style="color: black;"><%= item.date.toString().substring(0, item.date.toString().indexOf(':') - 2) %></span></h3>
+
+			  	<p style="margin: 10px 0 25px 0;"><%- item.description %></p>
+			  </article>
+
+
+			<% }); %>
+		</div>
+	</section>
+</article>
+
+
