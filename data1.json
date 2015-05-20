@@ -1,0 +1,118 @@
+{
+  "diving": [
+    {
+      "name": "Jonah Nisenson",
+      "title": "Warm waters and incredible visibility",
+      "date": "Fri Dec 12 2014 00:37:17 GMT-0500 (COT)",
+      "where": "Nicaragua",
+      "type": "diving",
+      "description": "The Corn Islands belong to Nicaragua and they also happen to be a locaton of some great diving. I dove on Little Corn Island."
+    },
+    {
+      "name": "The Grinch",
+      "title": "Loved the Angel Fish",
+      "date": "Fri Dec 12 2014 00:34:17 GMT-0500 (COT)",
+      "where": "Honduras",
+      "type": "diving",
+      "description": "I'm not stealing Xmas this year... I'm going diving."
+    },
+    {
+      "name": "Jacque Cousteau",
+      "title": "Burr, cold but incredible",
+      "date": "Wed Dec 10 2014 00:37:17 GMT-0500 (COT)",
+      "where": "Antarctica",
+      "type": "diving",
+      "description": "I'll really loved diving with the penguins down yonder. They are a curious bunch."
+    },
+    {
+      "name": "The Dude",
+      "title": "Chilled in an innertube",
+      "date": "Mon Dec 15 2014 00:37:17 GMT-0500 (COT)",
+      "where": "Costa Rica",
+      "type": "diving",
+      "description": "Would have liked to dive but relaxed in a tube.\nThe Dude Abides."
+    },
+    {
+      "name": "Sebastian",
+      "title": "Under da sea, darlin' It's better down where it's wetter",
+      "date": "Tue Dec 16 2014 16:04:24 GMT-0500 (COT)",
+      "where": "Bermuda",
+      "type": "diving",
+      "description": "Hard to get the wetsuit over my claws and the tank clanks against my shell."
+    },
+    {
+      "name": "Harry Potter",
+      "title": "Expecto Patronum spell underwater is really cool",
+      "date": "Thu Dec 18 2014 15:01:00 GMT-0500 (COT)",
+      "where": "United Kingdom",
+      "type": "diving",
+      "description": "It's like a giant bubble of light."
+    },
+    {
+      "name": "Little Mermaid",
+      "title": "I don't even need a tank",
+      "date": "Thu Dec 18 2014 17:50:59 GMT-0500 (COT)",
+      "where": "Armenia",
+      "type": "diving",
+      "description": "But it looks so cool to see all those people blowing bubbles as they swim around."
+    },
+    {
+      "name": "Jonah",
+      "title": "Had a great time diving in belize",
+      "date": "Sat Feb 28 2015 22:11:20 GMT-0500 (COT)",
+      "where": "Belize",
+      "type": "diving",
+      "description": "take that "
+    }
+  ],
+  "snorkeling": [
+    {
+      "name": "Ryan Milani",
+      "title": "My Deepest Dive",
+      "date": "Fri Dec 12 2014 12:37:17 GMT-0500 (COT)",
+      "where": "Honduras",
+      "type": "snorkeling",
+      "description": "It was while diving in Utila, Honduras that I dove to 50 meters."
+    },
+    {
+      "name": "Noe Munoz",
+      "title": "Whale sharks, biggest fish in the sea",
+      "date": "Fri Dec 12 2014 10:37:17 GMT-0500 (COT)",
+      "where": "Mexico",
+      "type": "snorkeling",
+      "description": "Off the tip of Baja I got to see the whale sharks. Visibility was not like in Honduras but those whale sharks are a sight to see."
+    },
+    {
+      "name": "Jonah Nisenson",
+      "title": "The time I fell in love with the sea",
+      "date": "Thu Dec 11 2014 00:37:17 GMT-0500 (COT)",
+      "where": "Thailand",
+      "type": "snorkeling",
+      "description": "Off the island of Koh Chang not far from Bangkok lies the best snorkeling I've ever done (behind perhaps Belize's barrier reef). Wowsers!"
+    },
+    {
+      "name": "Barrack Obama",
+      "title": "With Michelle",
+      "date": "Mon Dec 15 2014 01:39:56 GMT-0500 (COT)",
+      "where": "Bahamas",
+      "type": "snorkeling",
+      "description": "Tried to get away from the press but they just followed me. Had a spectacular wreck dive but I sucked through my air and only had 5 minutes of bottom time. Got to quick those smokes."
+    },
+    {
+      "name": "Mr. Bean",
+      "title": "I'm baking in the oven",
+      "date": "Thu Dec 18 2014 08:23:12 GMT-0500 (COT)",
+      "where": "Colombia",
+      "type": "snorkeling",
+      "description": "Mama, I'm gonna love diving."
+    },
+    {
+      "name": "marcela",
+      "title": "Estrellitas de mar",
+      "date": "Thu Dec 18 2014 12:54:41 GMT-0500 (COT)",
+      "where": "Colombia",
+      "type": "snorkeling",
+      "description": "Vi estrellas volando en el mar"
+    }
+  ]
+}
